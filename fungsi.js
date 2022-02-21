@@ -1,27 +1,28 @@
-//Penjumlahan
-console.log("===PENJUMLAHAN===")
+console.log("=== Deklarasi fungsi === \n------------------------------- ")
 
-//Case 1
-function penjumlahan() {
-    console.log(10 + 2)
+//cara1
+function penjumlahan1() {
+    console.log("1.", 10 + 2)
 }
-penjumlahan()
 
-//Case 2
-var penjumlahan1 = function () {
-    console.log("Hasilnya adalah :", 20 + 10)
-}
 penjumlahan1()
 
-// argumen dari fungsi bisa diubah, dengan menentukan parameter saat deklarasi
-function persegipan(panjang /*parameter 1*/, lebar/*parameter 2*/) {
-    console.log(panjang * lebar)
+//cara2
+var penjumlahan2 = function () {
+    console.log("2.", 100 + 30)
 }
 
-persegipan(10, 2)
-//========//
-var persegipan1 = function (panjang, lebar) {
-    return panjang + lebar
+penjumlahan2()
+
+//cara3
+function luasSegitiga(alas, tinggi) {
+    console.log("3.", alas * tinggi / 2, "cm")
 }
 
-console.log("Hasilnya adalah :", persegipan1(24, 18))
+luasSegitiga(7, 14)
+//atau
+function luasSegitiga2(alas, tinggi) {
+    return alas * tinggi / 2
+}
+
+console.log("3.", luasSegitiga2(7, 14), "cm")
