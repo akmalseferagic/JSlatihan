@@ -75,3 +75,32 @@ var merekHp = ["Xiaomi", "Redmi", "Samsung", "Nokia", "Blackberry"]
 var newMerekHp = merekHp.slice(2, 5) // varibale newMerekHp akan mengambil element dari indeks ke2 , dan mengambil sampai length ke5
 
 console.log(newMerekHp) // output [ 'Samsung', 'Nokia', 'Blackberry' ]
+
+//SORT
+var buah = ["Mangga", "Apel", "Alpukat", "Jeruk", "Jambu", "Ceri", "Delima", "Sawo"] //sedangkan jika dengan alphabet, tidak akan ada masalah
+console.log(buah.sort())
+//kita coba dengan angka
+var angka = [1, 4, 7, 8, 9, 5, 3, 2, 11, 15, 24, 65] //akan menyortir dari karakter, misal jika ada angka 10 diantara 1, 3, 5, 10, 
+//maka angka 10 akan diletakkan setelah angka 1 karena karakter awalnya adalah angka 1
+
+console.log(angka.sort()) // output [1, 11, 15,  2, 24, 3,  4,  5, 65,  7, 8,  9]
+
+//solusinya
+var newAngka = [1, 4, 7, 8, 9, 5, 3, 2, 11, 15, 24, 65]
+
+console.log(newAngka.sort((a, b) => a - b)) // output akan rapih dari urutan terkecil ke terbesar
+
+//REVERSE
+var angkaBaru = [1, 4, 7, 8, 9, 5, 3, 2, 11, 15, 24, 65]
+
+console.log(angkaBaru.reverse())
+
+//SPLICE 
+//menambah, menghapus dan mengganti element di array dengan splice
+var manUnited = ["Ronaldo", "Bruno", "Pogba", "Cavani", "Fred"]
+
+manUnited.splice(3, 0, "De Gea") //3 adalah indeks mana yang kamu pilih untuk awalan elemen baru kamu.
+//0 adalah lenght mana yang akan dieksekusi, dalam kasus ini, akan terhapus jika memilih diatas 0.
+
+console.log(manUnited)
+
