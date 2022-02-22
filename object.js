@@ -27,3 +27,14 @@ var mobil = {
 delete mobil.warna
 
 console.log(mobil) // output { merek: 'Jikang', harga: 24000000 }
+
+//====menambahkan fungsi pada objek
+let kucing = {
+    lucu: true,
+    kaki: 4,
+    suara: function () {
+        return "meong"
+    }
+}
+
+console.log(kucing.suara()) //output meong
