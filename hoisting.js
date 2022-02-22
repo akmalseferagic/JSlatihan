@@ -1,6 +1,6 @@
 console.log("=== Hoisting JS === \n------------------------------- ")
 
-//panggil fungsi
+//panggil fungsi terlebih dahulu
 sapaOrang()
 
 //fungsi
@@ -46,3 +46,13 @@ panggilMahasiswa1()
 //Variable mahasiswa tidak bisa dipanggil karena global
 // console.log(mahasiswa1) ==> code ini akan error jika diaktifkan
 
+//contoh lain
+let carName = 'Kijang';
+
+function displayCarName() {
+    let carName = 'Honda';
+
+    return 'Mobil ini bermerk ' + carName;
+}
+
+console.log(displayCarName()); //output: ...
