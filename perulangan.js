@@ -94,6 +94,7 @@ for (prop of angkasa) {
 console.log(ganjil)
 
 //soal lagi
+//perulangan pengurangan
 console.log("\nSOAL lagi =====")
 let angkas = [];
 var i = 5
@@ -104,3 +105,19 @@ while (i >= 0) {
     i--
 }
 console.log(angkas)
+
+
+//soal lagi
+//perulangan dengan do while
+let angkal = [];
+let il = 5;
+
+// Ubah kode loop dil bawah ini
+do {
+    angkal.push(il);
+    il++;
+}
+while (il <= 10) {
+}
+
+console.log(angkal)

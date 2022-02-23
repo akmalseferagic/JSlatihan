@@ -38,3 +38,15 @@ let kucing = {
 }
 
 console.log(kucing.suara()) //output meong
+
+let kucing = {
+    lucu: true,
+    kaki: 4,
+    suara: function () {
+        return "meong"
+    }
+};
+
+// Tulis kode kalian di bawah ini
+
+console.log(kucing.suara)
